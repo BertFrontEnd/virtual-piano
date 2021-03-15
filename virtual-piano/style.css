@@ -1,0 +1,35 @@
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+html {
+  font-size: 10px;
+  background-color: #313940;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #cd6326;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  font-weight: 100;
+  color: #333333;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

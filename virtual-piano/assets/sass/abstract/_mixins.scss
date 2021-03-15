@@ -1,0 +1,10 @@
+@mixin font($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin columns($justify-center, $align-center) {
+  display: flex;
+  justify-content: $justify-center;
+  align-items: $align-center;
+}
