@@ -1,0 +1,13 @@
+.main {
+  @include column($justify-center: flex-start, $align-center: space-between, $direction: column, $wrap: wrap);
+  width: 100%;
+  max-width: 1140px;
+  min-height: calc(100vh - 110px);
+  margin: 0 auto;
+  padding: 50px 10px 0;
+}
+
+.btn-container {
+  @include column($justify-center: center, $align-center: space-between, $direction: row, $wrap: wrap);
+  margin-bottom: 80px;
+}

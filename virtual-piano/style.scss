@@ -5,9 +5,9 @@
 
 //Base
 @import './assets/sass/base/base';
-
-
-//Layouts
-@import './assets/sass/layouts/wrapper';
+@import './assets/sass/base/buttons';
 
 // Components
+@import './assets/sass/components/header';
+@import './assets/sass/components/main';
+@import './assets/sass/components/footer';

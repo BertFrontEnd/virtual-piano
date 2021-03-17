@@ -1,5 +1,10 @@
+.btn {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 body {
-  font-family: 'Open Sans Regular', sans-serif;
+  font-family: 'Open Sans Light', sans-serif;
 }
 
 html {
@@ -10,26 +15,94 @@ html {
 body {
   font-size: 1.6rem;
   line-height: normal;
+  font-weight: 300;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 4.8rem;
-  line-height: 7.2rem;
-  font-weight: 100;
-  letter-spacing: 2px;
-  color: #cd6326;
+  font-size: 3.6rem;
+  line-height: 6rem;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-h2 {
-  font-size: 4.8rem;
-  line-height: 7.2rem;
-  font-weight: 100;
-  color: #333333;
+.btn {
+  margin: 5px;
+  padding: 10px 52px;
+  font-size: 1.6rem;
+  line-height: normal;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: #454c53;
+  cursor: pointer;
 }
 
-.wrapper {
-  position: relative;
-  max-width: 1440px;
+.btn:hover {
+  background-color: #515961;
+}
+
+.btn:active {
+  background-color: #00b4a4;
+}
+
+.btn-active {
+  background-color: #00b4a4;
+}
+
+.btn-active:hover {
+  background-color: #00c9b7;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #38495a, #a2abb3, #38495a);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1140px;
+  min-height: calc(100vh - 110px);
   margin: 0 auto;
+  padding: 50px 10px 0;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */

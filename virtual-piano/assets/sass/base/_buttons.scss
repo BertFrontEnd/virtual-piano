@@ -1,0 +1,28 @@
+.btn {
+  margin: 5px;
+  padding: 10px 52px;
+  @include font($size: 1.6rem);
+  color: $primary-text-color;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: $secondary-background-color;
+  cursor: pointer;
+  @extend %transition;
+  
+  &:hover {
+    background-color: $hover-background-color;
+  }
+
+  &:active {
+    background-color: $active-background-color;
+  }
+}
+
+.btn-active {
+   background-color: $active-background-color;
+
+   &:hover {
+     background-color: $active-hover-background-color;
+   }
+}
