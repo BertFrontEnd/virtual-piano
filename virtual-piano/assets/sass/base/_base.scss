@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  
   @extend %font-primary;
   @include font($size: 1.6rem, $height: normal);
   font-weight: 300;
