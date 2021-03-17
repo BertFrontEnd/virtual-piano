@@ -11,6 +11,7 @@
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: 'Open Sans Light';
   src: url('./font/OpenSans-Light.ttf') format('truetype');
@@ -21,6 +22,20 @@
 @font-face {
   font-family: 'Roboto Light';
   src: url('./font/Roboto-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('./font/OpenSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('./font/Roboto-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }

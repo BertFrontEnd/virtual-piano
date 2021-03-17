@@ -6,6 +6,16 @@
   font-family: 'Open Sans Light', sans-serif;
 }
 
+%font-bold {
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
 %font-secondary {
   font-family: 'Roboto Light', sans-serif;
+}
+
+%wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }

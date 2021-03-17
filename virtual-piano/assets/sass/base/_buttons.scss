@@ -9,7 +9,7 @@
   background-color: $secondary-background-color;
   cursor: pointer;
   @extend %transition;
-  
+
   &:hover {
     background-color: $hover-background-color;
   }
@@ -20,9 +20,43 @@
 }
 
 .btn-active {
-   background-color: $active-background-color;
+  background-color: $active-background-color;
 
-   &:hover {
-     background-color: $active-hover-background-color;
-   }
+  &:hover {
+    background-color: $active-hover-background-color;
+  }
+}
+
+.open-fullscreen,
+.close-fullscreen {
+  width: 42px;
+  height: 42px;
+  margin: 5px 15px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  background-color: $secondary-background-color;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  @extend %transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-background-color;
+  }
+
+  // remove after javascript
+  &:active {
+    background-color: $active-background-color;
+  }
+}
+
+.open-fullscreen {
+  background-image: url('./assets/img/fullscreen/open.svg');
+}
+
+.close-fullscreen {
+  background-image: url('./assets/img/fullscreen/close.svg');
 }

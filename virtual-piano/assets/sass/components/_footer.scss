@@ -1,0 +1,68 @@
+.footer {
+  @extend %wrapper;
+  border-top: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #38495a, #a2abb3, #38495a);
+}
+
+.footer-container {
+  @include column(
+    $justify-center: space-between,
+    $align-center: center,
+    $direction: row,
+    $wrap: wrap
+  );
+  padding: 0 15px;
+}
+
+.github {
+  display: block;
+  width: 120px;
+  height: 46px;
+  padding-left: 45px;
+  line-height: 4.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $icon-text-color;
+  background-image: url('./assets/img/network/github.svg');
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &:hover {
+    color: $hover-icon-text-color;
+  }
+}
+
+.rss {
+  display: block;
+  position: relative;
+  width: 86px;
+  height: 32px;
+  background-image: url('./assets/img/network/rss-school.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 111px;
+
+  .rss-year {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @extend %font-bold;
+    font-size: 21px;
+    letter-spacing: -2px;
+    color: $icon-text-color;
+    line-height: 1.8rem;
+    font-weight: 600;
+    @extend %transition;
+  }
+
+  &:hover {
+    .rss-year {
+      right: -5px;
+      letter-spacing: 0;
+      color: $hover-icon-text-color;
+    }
+  }
+}

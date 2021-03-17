@@ -12,15 +12,15 @@
   <body>
     <header class="header">
       <h1 class="header-title">Virtual Piano</h1>
-      <button class="fullscreen open-fullscreen"></button>
     </header>
 
     <main class="main">
       <section class="btn-container">
         <button class="btn btn-notes btn-active">Notes</button>
         <button class="btn btn-letters">Letters</button>
+        <button class="open-fullscreen"></button>
       </section>
-      <section class="piano">
+      <section class="piano-keys">
         <div class="key" data-letter="D" data-note="c"></div>
         <div class="key" data-letter="F" data-note="d"></div>
         <div class="key" data-letter="G" data-note="e"></div>
@@ -28,28 +28,21 @@
         <div class="key" data-letter="J" data-note="g"></div>
         <div class="key" data-letter="K" data-note="a"></div>
         <div class="key" data-letter="L" data-note="b"></div>
-        <div class="keys-sharp">
-          <div class="sharp" data-letter="R" data-note="c♯"></div>
-          <div class="sharp" data-letter="T" data-note="d♯"></div>
-          <div class="sharp none"></div>
-          <div class="sharp" data-letter="U" data-note="f♯"></div>
-          <div class="sharp" data-letter="I" data-note="g♯"></div>
-          <div class="sharp" data-letter="O" data-note="a♯"></div>
-        </div>
+      </section>
+      <section class="keys-sharp">
+        <div class="sharp" data-letter="R" data-note="c♯"></div>
+        <div class="sharp" data-letter="T" data-note="d♯"></div>
+        <div class="sharp none"></div>
+        <div class="sharp" data-letter="U" data-note="f♯"></div>
+        <div class="sharp" data-letter="I" data-note="g♯"></div>
+        <div class="sharp" data-letter="O" data-note="a♯"></div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer-container">
-        <a class="github" href="#" target="_blank" rel="noopener noreferrer"
-          >github</a
-        >
-        <a
-          class="rss"
-          href="https://rs.school/js/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="github" href="#" target="_blank">github</a>
+        <a class="rss" href="https://rs.school/js/" target="_blank">
           <span class="rss-year">'21</span>
         </a>
       </div>
