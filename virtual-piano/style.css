@@ -131,6 +131,7 @@ h1 {
 
 .key:active::before, .key:active::after {
   color: #00b4a4;
+  /* transform: scale(1) translateX(-50%) translateY(25%); */
 }
 
 .key::before, .key::after {
@@ -146,6 +147,7 @@ h1 {
   color: #a2abb3;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .key.pseudo-before::before {
@@ -200,6 +202,7 @@ h1 {
   color: #a2abb3;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .sharp.pseudo-before::before {
@@ -222,10 +225,13 @@ h1 {
   pointer-events: none;
 }
 
-.key-active,
-.sharp-active {
+.piano-active {
   -webkit-transform: scale(0.96);
           transform: scale(0.96);
+}
+
+.piano-active::after, .piano-active::before {
+  color: #00b4a4;
 }
 
 @media (max-width: 768px) {
@@ -318,7 +324,7 @@ h1 {
 
 .keys-sharp {
   position: absolute;
-  top: 186px;
+  top: 185px;
   left: 50%;
   width: 100%;
   max-width: 454px;

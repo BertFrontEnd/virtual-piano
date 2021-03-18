@@ -5,10 +5,15 @@ import {
 
 import { toggleButton, toggleSymbol } from './assets/module/buttons.js';
 
+import {
+  playSound,
+  addActiveState,
+  removeActiveState,
+} from './assets/module/keyboard.js';
+
 const toFullscreenButton = document.querySelector('.open-fullscreen');
 const fromFullscreenButton = document.querySelector('.close-fullscreen');
 
-const buttonsContainer = document.querySelector('.btn-container');
 const buttons = document.querySelectorAll('.btn');
 
 const keys = document.querySelectorAll('.key');
@@ -26,7 +31,7 @@ fromFullscreenButton.addEventListener('click', () => {
   fromFullscreenButton.style.display = 'none';
 });
 
-document.addEventListener('fullscreenchange', () => {
+window.addEventListener('fullscreenchange', () => {
   if (!document.fullscreenElement) {
     toFullscreenButton.style.display = 'block';
     fromFullscreenButton.style.display = 'none';
@@ -52,7 +57,19 @@ for (let button of buttons) {
   });
 }
 
-/* console.log(
-  (getComputedStyle(document.querySelector('.key'), 'after').display = 'block'),
-);
- */
+let down = false;
+
+window.addEventListener('keydown', (e) => {
+  if (down) {
+    return;
+  } else {
+    down = true;
+  }
+  playSound(e);
+  addActiveState(e);
+});
+
+window.addEventListener('keyup', (e) => {
+  down = false;
+  removeActiveState(e);
+});
