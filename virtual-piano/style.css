@@ -1,5 +1,4 @@
-.btn, .open-fullscreen,
-.close-fullscreen, .key, .key::before, .key::after, .sharp, .sharp::before, .sharp::after, .rss .rss-year {
+.btn, .fullscreen, .key, .key::before, .key::after, .sharp, .sharp::before, .sharp::after, .github, .rss .rss-year {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -8,7 +7,7 @@ body {
   font-family: 'Open Sans Light', sans-serif;
 }
 
-.rss .rss-year {
+.github, .rss .rss-year {
   font-family: 'Open Sans Bold', sans-serif;
 }
 
@@ -71,8 +70,7 @@ h1 {
   background-color: #00c9b7;
 }
 
-.open-fullscreen,
-.close-fullscreen {
+.fullscreen {
   width: 42px;
   height: 42px;
   margin: 5px 15px;
@@ -88,13 +86,11 @@ h1 {
   cursor: pointer;
 }
 
-.open-fullscreen:hover,
-.close-fullscreen:hover {
+.fullscreen:hover {
   background-color: #00c9b7;
 }
 
-.open-fullscreen:active,
-.close-fullscreen:active {
+.fullscreen:active {
   background-color: #00b4a4;
 }
 
@@ -103,7 +99,9 @@ h1 {
 }
 
 .close-fullscreen {
+  display: none;
   background-image: url("./assets/img/fullscreen/close.svg");
+  background-color: #00b4a4;
 }
 
 .key {
@@ -380,6 +378,7 @@ h1 {
   width: 120px;
   height: 46px;
   padding-left: 45px;
+  font-size: 2.1rem;
   line-height: 4.6rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -410,10 +409,10 @@ h1 {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 21px;
+  font-size: 2.1rem;
   letter-spacing: -2px;
   color: #cbd5de;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   font-weight: 600;
 }
 

@@ -27,8 +27,7 @@
   }
 }
 
-.open-fullscreen,
-.close-fullscreen {
+.fullscreen {
   width: 42px;
   height: 42px;
   margin: 5px 15px;
@@ -58,5 +57,7 @@
 }
 
 .close-fullscreen {
+  display: none;
   background-image: url('./assets/img/fullscreen/close.svg');
+  background-color: $active-background-color;
 }
