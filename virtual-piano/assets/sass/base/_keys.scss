@@ -44,10 +44,18 @@
     @extend %transition;
   }
 
+  &.pseudo-before::before {
+    display: none;
+  }
+
   // change with javascript
   &::after {
     display: none;
     content: attr(data-letter);
+  }
+
+  &.pseudo-after::after {
+    display: block;
   }
 }
 
@@ -96,10 +104,18 @@
     @extend %transition;
   }
 
+  &.pseudo-before::before {
+    display: none;
+  }
+
   // change with javascript
   &::after {
     display: none;
     content: attr(data-letter);
+  }
+
+  &.pseudo-after::after {
+    display: block;
   }
 }
 

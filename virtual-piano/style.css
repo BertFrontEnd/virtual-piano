@@ -148,9 +148,17 @@ h1 {
           transform: translateX(-50%);
 }
 
+.key.pseudo-before::before {
+  display: none;
+}
+
 .key::after {
   display: none;
   content: attr(data-letter);
+}
+
+.key.pseudo-after::after {
+  display: block;
 }
 
 .sharp {
@@ -194,9 +202,17 @@ h1 {
           transform: translateX(-50%);
 }
 
+.sharp.pseudo-before::before {
+  display: none;
+}
+
 .sharp::after {
   display: none;
   content: attr(data-letter);
+}
+
+.sharp.pseudo-after::after {
+  display: block;
 }
 
 .none {
