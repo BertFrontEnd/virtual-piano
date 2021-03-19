@@ -11,8 +11,6 @@ const playSoundKeyboard = (e) => {
 
 const addActiveState = (e) => {
   const keys = document.querySelectorAll(`div[data-key="${e.keyCode}"]`);
-  // remove
-  console.log(keys);
   for (let key of keys) {
     key.classList.add('piano-active');
   }
@@ -20,8 +18,6 @@ const addActiveState = (e) => {
 
 const removeActiveState = (e) => {
   const keys = document.querySelectorAll(`div[data-key="${e.keyCode}"]`);
-  // remove
-  console.log(keys);
   for (let key of keys) {
     key.classList.remove('piano-active');
   }

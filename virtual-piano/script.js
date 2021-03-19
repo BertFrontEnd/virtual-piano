@@ -12,6 +12,7 @@ import {
 } from './assets/module/keyboard.js';
 
 import {
+  playSoundMouse,
   startCorrespondOver,
   stopCorrespondOver,
 } from './assets/module/mouse.js';
@@ -43,8 +44,6 @@ window.addEventListener('fullscreenchange', () => {
     toFullscreenButton.style.display = 'block';
     fromFullscreenButton.style.display = 'none';
   }
-  // remove
-  console.log('Esc');
 });
 
 for (let button of buttons) {
@@ -58,9 +57,6 @@ for (let button of buttons) {
     for (let sharp of sharps) {
       toggleSymbol(sharp);
     }
-
-    // remove
-    console.log('toggle');
   });
 }
 
@@ -83,3 +79,5 @@ window.addEventListener('keyup', (e) => {
 
 pianoContainer.addEventListener('mousedown', startCorrespondOver);
 pianoContainer.addEventListener('mouseup', stopCorrespondOver);
+
+pianoContainer.addEventListener('mousedown', playSoundMouse);
