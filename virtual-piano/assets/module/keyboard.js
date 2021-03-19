@@ -1,4 +1,4 @@
-const playSound = (e) => {
+const playSoundKeyboard = (e) => {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
   if (!audio) {
@@ -27,4 +27,4 @@ const removeActiveState = (e) => {
   }
 };
 
-export { playSound, addActiveState, removeActiveState };
+export { playSoundKeyboard, addActiveState, removeActiveState };

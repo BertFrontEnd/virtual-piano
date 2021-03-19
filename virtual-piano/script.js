@@ -6,10 +6,15 @@ import {
 import { toggleButton, toggleSymbol } from './assets/module/buttons.js';
 
 import {
-  playSound,
+  playSoundKeyboard,
   addActiveState,
   removeActiveState,
 } from './assets/module/keyboard.js';
+
+import {
+  startCorrespondOver,
+  stopCorrespondOver,
+} from './assets/module/mouse.js';
 
 const toFullscreenButton = document.querySelector('.open-fullscreen');
 const fromFullscreenButton = document.querySelector('.close-fullscreen');
@@ -18,6 +23,8 @@ const buttons = document.querySelectorAll('.btn');
 
 const keys = document.querySelectorAll('.key');
 const sharps = document.querySelectorAll('.sharp');
+
+const pianoContainer = document.querySelector('.piano-container');
 
 toFullscreenButton.addEventListener('click', () => {
   activateFullscreen();
@@ -65,7 +72,7 @@ window.addEventListener('keydown', (e) => {
   } else {
     down = true;
   }
-  playSound(e);
+  playSoundKeyboard(e);
   addActiveState(e);
 });
 
@@ -73,3 +80,6 @@ window.addEventListener('keyup', (e) => {
   down = false;
   removeActiveState(e);
 });
+
+pianoContainer.addEventListener('mousedown', startCorrespondOver);
+pianoContainer.addEventListener('mouseup', stopCorrespondOver);

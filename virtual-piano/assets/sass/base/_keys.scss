@@ -8,6 +8,7 @@
   transform-origin: center top;
   @extend %transition;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background-color: $hover-key-color;
@@ -19,15 +20,14 @@
   }
 
   // remove after javascript
-  &:active {
+  /*   &:active {
     transform: scale(0.96);
 
     &::before,
     &::after {
       color: $active-background-color;
-      /* transform: scale(1) translateX(-50%) translateY(25%); */
     }
-  }
+  } */
 
   &::before,
   &::after {
@@ -50,12 +50,12 @@
     display: none;
   }
 
-  // change with javascript
   &::after {
     display: none;
     content: attr(data-letter);
   }
 
+  // change with javascript
   &.pseudo-after::after {
     display: block;
   }
@@ -72,6 +72,7 @@
   pointer-events: auto;
   @extend %transition;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     &::before,
@@ -81,14 +82,14 @@
   }
 
   // remove after javascript
-  &:active {
+  /*   &:active {
     transform: scale(0.96);
 
     &::before,
     &::after {
       color: $active-background-color;
     }
-  }
+  } */
 
   &::before,
   &::after {
@@ -111,12 +112,12 @@
     display: none;
   }
 
-  // change with javascript
   &::after {
     display: none;
     content: attr(data-letter);
   }
 
+  // change with javascript
   &.pseudo-after::after {
     display: block;
   }
