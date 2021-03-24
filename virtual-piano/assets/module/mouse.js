@@ -19,11 +19,13 @@ const playSoundMouse = (e) => {
 
 const startSound = (e) => {
   e.target.classList.add('piano-active');
+  e.target.classList.add('piano-active-pseudo');
   playSoundMouse(e);
 };
 
 const stopSound = (e) => {
   e.target.classList.remove('piano-active');
+  e.target.classList.remove('piano-active-pseudo');
 };
 
 const startCorrespondOver = (e) => {
@@ -32,6 +34,7 @@ const startCorrespondOver = (e) => {
     e.target.classList.contains('sharp')
   ) {
     e.target.classList.add('piano-active');
+    e.target.classList.add('piano-active-pseudo');
   }
 
   pianoCollection.forEach((elem) => {
@@ -43,6 +46,7 @@ const startCorrespondOver = (e) => {
 const stopCorrespondOver = () => {
   pianoCollection.forEach((elem) => {
     elem.classList.remove('piano-active');
+    elem.classList.remove('piano-active-pseudo');
     elem.removeEventListener('mouseover', startSound);
     elem.removeEventListener('mouseout', stopSound);
   });

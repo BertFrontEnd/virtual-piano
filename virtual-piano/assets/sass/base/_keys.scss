@@ -132,9 +132,11 @@
 
 .piano-active {
   transform: scale(0.96);
+}
 
-  &::after,
-  &::before {
+.piano-active {
+  &.piano-active-pseudo::after,
+  &.piano-active-pseudo::before {
     color: $active-background-color;
   }
 }

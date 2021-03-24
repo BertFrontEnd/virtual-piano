@@ -236,7 +236,7 @@ h1 {
           transform: scale(0.96);
 }
 
-.piano-active::after, .piano-active::before {
+.piano-active.piano-active-pseudo::after, .piano-active.piano-active-pseudo::before {
   color: #00b4a4;
 }
 
